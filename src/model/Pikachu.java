@@ -24,3 +24,53 @@ package model;
  * evolution = "RAICHU" 
  * baseExp = "112"
  */
+public class Pikachu extends Pokemon
+{
+	String characteristics;
+	String type;
+	String evolution;
+	String baseExp;
+	public String getchar()
+	{
+		return this.characteristics;
+	}
+	public void setchar(String characteristics)
+	{
+		this.characteristics = characteristics;
+	}
+	public String gettype()
+	{
+		return this.characteristics;
+	}
+	public void settype(String type)
+	{
+		this.type = type;
+	}
+	public String getevolution()
+	{
+		return this.characteristics;
+	}
+	public void setevolution(String evolution)
+	{
+		this.evolution = evolution;
+	}
+	public String getbaseExp()
+	{
+		return this.baseExp;
+	}
+	public void setbaseExp(String baseExp)
+	{
+		this.baseExp = baseExp;
+	}
+	public Pikachu(String pokemonName, int pokemonNumber,String type,String evolution,String baseExp,String characteristics) {
+		super(pokemonName, pokemonNumber);
+		// TODO Auto-generated constructor stub
+		this.pokemonName = "Pikachu";
+		this.pokemonNumber = 25;
+		this.type = "ELECTRIC";
+		this.evolution = "RAICHU";
+		this.baseExp = "112";
+		this.characteristics = " Pikachu is an Electric-type Pokémon, which was introduced in Generation I. \n" + 
+				"Over the years, Pikachu has become so popular that it serves as the Pokémon franchise mascot.";
+	}
+}
